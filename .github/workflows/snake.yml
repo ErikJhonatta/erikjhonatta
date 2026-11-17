@@ -20,7 +20,7 @@ jobs:
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
 
-      - uses: crazy-max/ghaction-github-pages@v4
+      - uses: crazy-max/ghaction-github-pages@v5
         with:
           target_branch: output
           build_dir: dist
@@ -31,7 +31,7 @@ jobs:
     name: Profile summary cards
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       # Add a SUMMARY_GITHUB_TOKEN secret (classic PAT, repo + read:user)
       # to include private contributions. Falls back to public data only.
